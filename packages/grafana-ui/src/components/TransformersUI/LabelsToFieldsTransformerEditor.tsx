@@ -2,7 +2,7 @@ import React from 'react';
 import {
   DataTransformerID,
   standardTransformers,
-  TransformerRegistyItem,
+  TransformerRegistryItem,
   TransformerUIProps,
   LabelsToFieldsOptions,
 } from '@grafana/data';
@@ -15,7 +15,7 @@ export const LabelsAsFieldsTransformerEditor: React.FC<TransformerUIProps<Labels
   return null;
 };
 
-export const labelsToFieldsTransformerRegistryItem: TransformerRegistyItem<LabelsToFieldsOptions> = {
+export const labelsToFieldsTransformerRegistryItem: TransformerRegistryItem<LabelsToFieldsOptions> = {
   id: DataTransformerID.labelsToFields,
   editor: LabelsAsFieldsTransformerEditor,
   transformation: standardTransformers.labelsToFieldsTransformer,

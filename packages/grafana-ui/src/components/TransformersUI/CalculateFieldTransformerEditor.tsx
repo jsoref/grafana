@@ -6,7 +6,7 @@ import {
   KeyValue,
   ReducerID,
   standardTransformers,
-  TransformerRegistyItem,
+  TransformerRegistryItem,
   TransformerUIProps,
   NullValueMode,
   BinaryOperationID,
@@ -356,7 +356,7 @@ export class CalculateFieldTransformerEditor extends React.PureComponent<
   }
 }
 
-export const calculateFieldTransformRegistryItem: TransformerRegistyItem<CalculateFieldTransformerOptions> = {
+export const calculateFieldTransformRegistryItem: TransformerRegistryItem<CalculateFieldTransformerOptions> = {
   id: DataTransformerID.calculateField,
   editor: CalculateFieldTransformerEditor,
   transformation: standardTransformers.calculateFieldTransformer,
