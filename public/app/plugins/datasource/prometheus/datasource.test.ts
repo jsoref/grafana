@@ -228,7 +228,7 @@ describe('PrometheusDatasource', () => {
       };
     });
 
-    it('should convert cumullative histogram to ordinary', () => {
+    it('should convert cumulative histogram to ordinary', () => {
       const resultMock = [
         {
           metric: { __name__: 'metric', job: 'testjob', le: '10' },
@@ -1790,7 +1790,7 @@ describe('prepareTargets', () => {
     });
 
     describe('and Graph is hidden', () => {
-      it('then it should return only intant related objects', () => {
+      it('then it should return only instant related objects', () => {
         const target: PromQuery = {
           refId: 'A',
           expr: 'up',
