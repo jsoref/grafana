@@ -1,0 +1,49 @@
+< youtube \w{11} >
+https?://(?:(?:www\.|)youtube\.com|youtu.be)/[-a-zA-Z0-9?&=]*
+data:[a-zA-Z=;,/0-9+]+
+(?:0[Xx]|U\+|#)[a-f0-9A-FGgRr]{2,}[Uu]?[Ll]?\b
+"[a-f0-9]{64}"
+\b[a-f0-9]{40}\b
+\b([A-Za-z])\1{3,}\b
+\burl\([.'][^)]+\)
+
+# packages/grafana-toolkit/src/cli/tasks/manifest.test.ts:
+3c04068eb581f73a262a2081f4adca2edbb14edf
+
+# packages/grafana-data/src/dataframe/ArrowDataFrame.test.ts:
+'[0-9a-zA-Z+/=]{10,}='
+ssh-rsa [0-9a-zA-Z+/=]+
+
+# pkg/models/datasource_cache_test.go:
+^[0-9a-zA-Z+/=]{64}$
+^[0-9a-zA-Z+/=]{55}=$
+^[0-9a-zA-Z+/=]{31}=$
+^[0-9a-zA-Z+/=]{7}=$
+
+# scripts/build/ci-build/Dockerfile:
+ARG CHKSUM_....._MUSL=[0-9a-f]+
+
+# docs/sources/tutorials/_index.md:
+monitoring-urbancode-deploments-with.html
+
+# docs/sources/features/panels/singlestat.md:
+/v45/singelstat-
+
+# github user:
+\b2014 Unknwon\b
+\b(?:)github\.com/unknwon/
+
+\b(?:)consideRatio\b
+\b(?:)github\.com/consideRatio/
+
+[/.]github\.com/[^ )\]]+
+/grafa\.url/[a-f]+
+
+# https://github.com/palantir/tslint/issues/ 4884
+typescript-eslint/no-inferrable-types
+
+# category defined by packages/grafana-data/src/valueFormats/categories.ts:
+'megwatt'
+
+# public/vendor/tagsinput/bootstrap-tagsinput.js:
+\bIgnore items allready added\b
