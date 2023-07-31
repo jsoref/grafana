@@ -1,12 +1,15 @@
 name: Auto-milestone
 on:
-  pull_request:
+  pull_request_target:
     types:
       - opened
       - closed
 
 jobs:
   main:
+    permissions:
+      contents: none
+  
     runs-on: ubuntu-latest
     steps:
       - name: "Generate token"
